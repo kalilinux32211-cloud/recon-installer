@@ -6,9 +6,9 @@ This script automates the complete setup and configuration of a high-performance
 To deploy the entire toolkit instantly without any manual configuration or caching issues, copy and paste the following command into your Kali Linux terminal:
 Bash
 
-curl -sL "https://raw.githubusercontent.com/kalilinux32211-cloud/recon-installer/main/install.sh?v=$RANDOM" | sudo bash
+    curl -sL "https://raw.githubusercontent.com/kalilinux32211-cloud/recon-installer/main/install.sh?v=$RANDOM" | sudo bash
 
-    Note: After the installation is complete, make sure to restart your terminal or run source ~/.zshrc (or source ~/.bashrc if using Bash) to activate all tools in your environment.
+Note: After the installation is complete, make sure to restart your terminal or run source ~/.zshrc (or source ~/.bashrc if using Bash) to activate all tools in your environment.
 
 🛠️ Step-by-Step Architecture (How it Works)
 
