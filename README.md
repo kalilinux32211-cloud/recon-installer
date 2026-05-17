@@ -14,19 +14,19 @@ Note: After the installation is complete, make sure to restart your terminal or 
 
 The provisioning script executes sequentially through 7 structural phases:
 
-    Privilege & System Sync: Checks for root/sudo access and performs a full system update (apt update && apt upgrade) to prevent dependency conflicts.
+1. Privilege & System Sync: Checks for root/sudo access and performs a full system update (apt update && apt upgrade) to prevent dependency conflicts.
 
-    Core Dependencies Mapping: Installs essential compiler tools, runtimes, and Linux security packages (git, make, gcc, libpcap-dev, python3-pip, etc.).
+2. Core Dependencies Mapping: Installs essential compiler tools, runtimes, and Linux security packages (git, make, gcc, libpcap-dev, python3-pip, etc.).
 
-    Golang Pipeline Optimization: Automatically fetches and installs the latest stable version of Go from official sources, and injects persistence paths into both ~/.bashrc and ~/.zshrc.
+3. Golang Pipeline Optimization: Automatically fetches and installs the latest stable version of Go from official sources, and injects persistence paths into both ~/.bashrc and ~/.zshrc.
 
-    Mass Go Binary Compilation: Downloads, compiles, and installs the latest binary distributions of 13+ powerhouse recon utilities directly into the environment path.
+4. Mass Go Binary Compilation: Downloads, compiles, and installs the latest binary distributions of 13+ powerhouse recon utilities directly into the environment path.
 
-    High-Speed DNS Engine Compilation: Clones and compiles MassDNS from C-source code for ultra-fast multi-threaded subdomain resolution.
+5. High-Speed DNS Engine Compilation: Clones and compiles MassDNS from C-source code for ultra-fast multi-threaded subdomain resolution.
 
-    Specialized Python Framework Clusters: Deploys and automatically maps structural requirements for advanced URL and secret analysis frameworks (ParamSpider & SecretFinder).
+6. Specialized Python Framework Clusters: Deploys and automatically maps structural requirements for advanced URL and secret analysis frameworks (ParamSpider & SecretFinder).
 
-    Asset Dictionary Integration: Syncs essential bug bounty dictionaries, including a shallow clone of SecLists and specialized XSS payload lists.
+7.  Asset Dictionary Integration: Syncs essential bug bounty dictionaries, including a shallow clone of SecLists and specialized XSS payload lists.
 
 🧰 Included Tools & Capabilities
 
