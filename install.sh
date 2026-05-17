@@ -101,9 +101,6 @@ rm -rf /tmp/aquatone.zip /tmp/aquatone_bin
 # 7. Core Asset Dictionary Mappings (Wordlists)
 echo -e "${GREEN}[+] Syncing structural wordlist packages...${NC}"
 git clone --depth 1 https://github.com/danielmiessler/SecLists.git ~/wordlists/SecLists
-git clone https://github.com/payloadbox/xss-payload-list.git ~/wordlists/PayloadBox-XSS
-
-echo -e "${BLUE}[*] =================================================== ${NC}"
-echo -e "${GREEN}[+] PROVISIONING SUCCESSFUL: Environment assets are live. ${NC}"
-echo -e "${BLUE}[*] Execute 'source ~/.bashrc' or restart the terminal session. ${NC}"
+# Updated line with a stable and active alternative repo
+git clone https://github.com/thefizzynator/xss-payload-list.git ~/wordlists/PayloadBox-XSS
 echo -e "${BLUE}[*] =================================================== ${NC}"
