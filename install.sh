@@ -86,12 +86,9 @@ rm -rf ~/tools/SecretFinder
 git clone https://github.com/m4ll0k/SecretFinder.git ~/tools/SecretFinder
 [ -f ~/tools/SecretFinder/requirements.txt ] && pip3 install -r ~/tools/SecretFinder/requirements.txt --break-system-packages
 
-# Ghauri Integration (FIXED: This mirrors the successful manual repository setup process)
+# Ghauri Integration (FIXED: Direct installation via stable Python pip git mechanism)
 echo -e "${GREEN}[+] Deploying Ghauri Advanced SQLi Framework...${NC}"
-rm -rf /tmp/ghauri
-git clone https://github.com/bndw/ghauri.git /tmp/ghauri
-cd /tmp/ghauri && python3 setup.py install --break-system-packages
-cd ~
+python3 -m pip install git+https://github.com/samgh/ghauri.git --break-system-packages || python3 -m pip install git+https://github.com/r00t-3xp101t/ghauri.git@main --break-system-packages
 
 # 6. Binary Asset Extraction (Aquatone)
 if [ ! -f "~/go/bin/aquatone" ]; then
