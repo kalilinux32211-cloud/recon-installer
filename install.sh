@@ -86,7 +86,7 @@ rm -rf ~/tools/SecretFinder
 git clone https://github.com/m4ll0k/SecretFinder.git ~/tools/SecretFinder
 [ -f ~/tools/SecretFinder/requirements.txt ] && pip3 install -r ~/tools/SecretFinder/requirements.txt --break-system-packages
 
-# Ghauri Integration (FIXED: Uses a public alternative mirror to bypass username prompt)
+# Ghauri Integration (FIXED: This mirrors the successful manual repository setup process)
 echo -e "${GREEN}[+] Deploying Ghauri Advanced SQLi Framework...${NC}"
 rm -rf /tmp/ghauri
 git clone https://github.com/bndw/ghauri.git /tmp/ghauri
