@@ -12,5 +12,4 @@ This script eliminates hours of manual installation overhead by dynamically conf
 To deploy the entire offensive security architecture instantly, execute the following command in your terminal:
 
 ```bash
-curl -sL [https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/install.sh](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/install.sh) | sudo bash
-s
+curl -sL "[https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/install.sh](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/install.sh)" | sudo bash
