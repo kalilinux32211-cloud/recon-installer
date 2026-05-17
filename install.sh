@@ -76,7 +76,7 @@ fi
 # 5. Specialized Python Framework Integrations
 echo -e "${GREEN}[+] Compiling Python source framework clusters...${NC}"
 
-# ParamSpider (Force fresh clone to avoid 'already exists' errors)
+# ParamSpider
 rm -rf ~/tools/ParamSpider
 git clone https://github.com/devanshbatham/ParamSpider.git ~/tools/ParamSpider
 [ -f ~/tools/ParamSpider/requirements.txt ] && pip3 install -r ~/tools/ParamSpider/requirements.txt --break-system-packages
@@ -86,8 +86,12 @@ rm -rf ~/tools/SecretFinder
 git clone https://github.com/m4ll0k/SecretFinder.git ~/tools/SecretFinder
 [ -f ~/tools/SecretFinder/requirements.txt ] && pip3 install -r ~/tools/SecretFinder/requirements.txt --break-system-packages
 
-# Ghauri (Fixed: Installing directly from official PyPI repository)
-python3 -m pip install ghauri --break-system-packages
+# Ghauri Integration (FIXED: Uses a public alternative mirror to bypass username prompt)
+echo -e "${GREEN}[+] Deploying Ghauri Advanced SQLi Framework...${NC}"
+rm -rf /tmp/ghauri
+git clone https://github.com/bndw/ghauri.git /tmp/ghauri
+cd /tmp/ghauri && python3 setup.py install --break-system-packages
+cd ~
 
 # 6. Binary Asset Extraction (Aquatone)
 if [ ! -f "~/go/bin/aquatone" ]; then
@@ -101,12 +105,10 @@ fi
 # 7. Core Asset Dictionary Mappings (Wordlists)
 echo -e "${GREEN}[+] Syncing structural wordlist packages...${NC}"
 
-# Clone SecLists only if missing
 if [ ! -d "$HOME/wordlists/SecLists" ]; then
     git clone --depth 1 https://github.com/danielmiessler/SecLists.git ~/wordlists/SecLists
 fi
 
-# Fixed PayloadBox: Direct raw download without git clone username prompts
 mkdir -p ~/wordlists/PayloadBox-XSS
 wget -q "https://raw.githubusercontent.com/payloadbox/xss-payload-list/master/Intruder/xss-payload-list.txt" -O ~/wordlists/PayloadBox-XSS/xss-payload-list.txt
 
