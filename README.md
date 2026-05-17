@@ -13,3 +13,4 @@ To deploy the entire offensive security architecture instantly, execute the foll
 
 ```bash
 curl -sL [https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/install.sh](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/install.sh) | sudo bash
+s
