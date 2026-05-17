@@ -1,7 +1,8 @@
 🚀 Automated Recon & Bug Bounty Environment Provisioner
 
 This script automates the complete setup and configuration of a high-performance Reconnaissance and Bug Bounty hunting environment on Kali Linux. It handles system dependencies, configures dual-shell paths (Bash & Zsh), compiles low-level engines, and installs industry-standard Go and Python security tools.
-⚡ One-Click Installation
+
+## ⚡ One-Click Installation
 
 To deploy the entire toolkit instantly without any manual configuration or caching issues, copy and paste the following command into your Kali Linux terminal:
 Bash
