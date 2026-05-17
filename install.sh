@@ -86,8 +86,8 @@ rm -rf ~/tools/SecretFinder
 git clone https://github.com/m4ll0k/SecretFinder.git ~/tools/SecretFinder
 [ -f ~/tools/SecretFinder/requirements.txt ] && pip3 install -r ~/tools/SecretFinder/requirements.txt --break-system-packages
 
-# Ghauri (Fixed: Installing directly via python module)
-python3 -m pip install git+https://github.com/r00t-3xp101t/ghauri.git --break-system-packages
+# Ghauri (Fixed: Installing directly from official PyPI repository)
+python3 -m pip install ghauri --break-system-packages
 
 # 6. Binary Asset Extraction (Aquatone)
 if [ ! -f "~/go/bin/aquatone" ]; then
